@@ -4,4 +4,4 @@ metadata:
  name: my-configmap
 data:
   course: "kubernetes"
-  duration: "25hrs"
+  duration: "26hrs"
