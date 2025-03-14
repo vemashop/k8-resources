@@ -14,7 +14,7 @@ spec:
       tier: web
   template:
     metadata:
-      name:
+      name: frontend
       labels:
         app: frontend
         tier: web
