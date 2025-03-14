@@ -22,8 +22,26 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx 
+          image: vemasaikumar/nginx:1.0.0
           ports:
           - containerPort: 80    
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx
+spec:
+  type: LoadBalancer
+  selector:
+    labels:
+    app: nginx
+    tier: web
+    purpose: deployment
+  ports:
+  - protocol: TCP
+    port: 80 # service port
+    targetPort: 80
+    nodePort: 30007  
+
 
 
