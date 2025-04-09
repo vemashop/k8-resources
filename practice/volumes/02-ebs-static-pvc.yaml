@@ -37,7 +37,7 @@ metadata:
   name: ebs
 spec:
   type: LoadBalancer
-  selctor:
+  selector:
     purpose: "ebs-static-demo"
   ports:
   - protocol: TCP
