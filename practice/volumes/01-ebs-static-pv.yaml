@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: ebs-stat
+  name: ebs
 spec:
   accessModes:
   - ReadWriteOnce  
