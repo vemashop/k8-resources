@@ -10,5 +10,5 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: 
+    volumeHandle: vol-06827e7c9aa3c261e
       
