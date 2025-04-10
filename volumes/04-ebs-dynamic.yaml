@@ -4,7 +4,7 @@ metadata:
   name: ebs-dynamic
 spec:
   storageClassName: ebs-sc
-  accessMode:
+  accessModes:
   - ReadWriteOnce
   resources:
     requests:
@@ -40,6 +40,6 @@ spec:
     purpose: ebs-dynamic-demo
   ports:
   - protocol: TCP
-    ports: 80
+    port: 80
     targetPort: 80 
     nodePort: 30007  
