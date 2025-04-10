@@ -28,7 +28,7 @@ spec:
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
-      claimName: ebs-sc 
+      claimName: ebs-dynamic
 ---
 apiVersion: v1
 kind: Service
